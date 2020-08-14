@@ -1,4 +1,4 @@
-let invoice = 100;
+const invoice = 100;
 const stock = 100;
 
 // Write code under this line
