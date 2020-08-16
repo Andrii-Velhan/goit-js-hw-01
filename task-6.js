@@ -4,7 +4,7 @@ let input;
 let total = 0;
 
 const INPUT_DENIED = 'Было введено не число, попробуйте еще раз';
-// let SUMM = `Общая сумма чисел равна ${total}`;
+let SUMM = `Общая сумма чисел равна ${total}`;
 
 // prompt('Enter Number:');
 // while (input === null) {
@@ -14,15 +14,14 @@ const INPUT_DENIED = 'Было введено не число, попробуй�
 
 do {
   input = prompt('Enter Number:');
-  total = total + Number(input);
-} while (input !== null);
-{
-  alert(`Общая сумма чисел равна ${total}`);
-}
 
-// if (isNaN(input)) {
-//   alert(INPUT_DENIED);
-//   }
+  if (isNaN(input)) {
+    alert(INPUT_DENIED);
+  } else {
+    total += Number(input);
+  }
+} while (input !== null);
+alert(`Общая сумма чисел равна ${total}`);
 
 // while (isNaN(input)) {
 //    alert(INPUT_DENIED)
